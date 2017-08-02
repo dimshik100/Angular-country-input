@@ -1,0 +1,5 @@
+<select placeholder="Select Country" (change)="onChange($event)">
+  <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+</select>
+
+<!-- {{selectedCountry | json}} -->
